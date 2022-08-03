@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classes from './QuizList.module.css';
+import GuideClasses from './GuideStr.module.css';
 import { NavLink } from 'react-router-dom';
 import Loader from '../../components/UI/Loader/Loader';
 import { connect } from 'react-redux';
@@ -22,17 +23,25 @@ class QuizList extends Component {
 
   render() {
     return (
-      <div className={classes.QuizList}>
-        <div>
-          <h1>Список тестов</h1>
-
-          {this.props.loading && this.props.quizes.length !== 0 ? (
-            <Loader />
-          ) : (
-            <ul>{this.renderQuizes()}</ul>
-          )}
+      <>
+        <div className={GuideClasses.GuideStr}>
+          <span>&lArr;</span>
+          <h2>
+            Авторизироваться и создавать <br></br>новые тесты здесь
+          </h2>
         </div>
-      </div>
+        <div className={classes.QuizList}>
+          <div>
+            <h1>Список тестов</h1>
+
+            {this.props.loading && this.props.quizes.length !== 0 ? (
+              <Loader />
+            ) : (
+              <ul>{this.renderQuizes()}</ul>
+            )}
+          </div>
+        </div>
+      </>
     );
   }
 }

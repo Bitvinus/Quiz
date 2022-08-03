@@ -1,0 +1,13 @@
+.GuideStr {
+  padding-left: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  background: linear-gradient(90deg, #fd8355 0%, #f0576c 37%, #f79cbd 100%);
+}
+
+.GuideStr span {
+  font-size: 35pt;
+  font-weight: 500;
+}
