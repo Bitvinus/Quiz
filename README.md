@@ -28,7 +28,8 @@ An application for creating quizzes. You can log in and save your quizzes.
 ### To start
 1) Copy or clone project to you local folder
 2) `$npm install --save redux-thunk`
-3) `$npm start`
+3) `$npm install react-scripts@latest`
+4) `$npm start`
 
   </div>
   </div>
